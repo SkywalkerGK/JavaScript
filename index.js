@@ -1,14 +1,22 @@
-let content2 = document.getElementById('content-2')
-let textHtml = '<b>เกิดมาไม่เคยเจอใครเหมือนเธอ</b>'
-textHtml += ' <i>หลับฝันละเมอภาพเธอคอยหลอนทุกคืน</i> '
-content2.innerHTML = textHtml;
+let numberInput = document.getElementById('number-input')
+let runbutton = document.getElementById('run-button')
+let output = document.getElementById('output')
 
+function printMultiply() {
+    let number = Number(numberInput.value)
+    let outputHtml = '';
 
-let discountButton = document.getElementById('discount-button')
-let message = document.getElementById('message')
+    if (number === 0) {
+        output.innerHTML = 'อยากบอกว่าเสียใจ ไม่มีค่า'
+        return
+    }
 
-function showMessage() {
-    message.innerHTML = 'หมดเวลาสนุกแล้วสิ'
+    for (let i = 1; i <= 12 ; i++) {
+        outputHtml += '<p>'
+        outputHtml += number + 'x' + i + '=' + (number*i)
+        outputHtml += '</p>'
+    }
+    output.innerHTML = outputHtml
 }
 
-discountButton.addEventListener('click', showMessage)
+runbutton.addEventListener('click',printMultiply)
