@@ -1,12 +1,12 @@
-let score = 69;
+for (let i = 1 ; i <= 12 ; i++) {
+    if (i % 2 === 0) {
+        console.log('Continue')
+        continue
+    }
+    else if (i === 9) {
+        break;
+    }
+    console.log(i)
+}
+console.log('break')
 
-if (score >= 80) {
-    console.log('Grade A')
-}
-
-else if (score >= 70) {
-    console.log('Grade B')
-}
-else {
-    console.log('Grade F')
-}
