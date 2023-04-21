@@ -1,6 +1,12 @@
-console.log("Goodbye World");
-let x = 2;
-let y = Number('3')
-console.log(x)
-x = x+y
-console.log(x)
+let score = 69;
+
+if (score >= 80) {
+    console.log('Grade A')
+}
+
+else if (score >= 70) {
+    console.log('Grade B')
+}
+else {
+    console.log('Grade F')
+}
