@@ -1,12 +1,12 @@
-for (let i = 1 ; i <= 12 ; i++) {
-    if (i % 2 === 0) {
-        console.log('Continue')
-        continue
-    }
-    else if (i === 9) {
-        break;
-    }
-    console.log(i)
+function getPyrmidArea(length,width,height) {
+    let base = length * width
+    let pyraminVolume = 1/3 * base * height
+    console.log(pyraminVolume)
+    return pyraminVolume
 }
-console.log('break')
+
+let area1 = getPyrmidArea(2,2,3)
+let area2 = getPyrmidArea(4,5,6)
+
+console.log('Area 1 = ' + area1 + ' Area 2 = ' + area2)
 
